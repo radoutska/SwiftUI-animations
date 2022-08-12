@@ -17,6 +17,8 @@ struct MainView<Router: Routing>: View where Router.Route == AppRoute {
     @State var isActive: Bool = true
     @State var gameViewActive: Bool = false
     @State var interactiveNavigationViewActive: Bool = false
+    @State var catFactViewActive: Bool = true
+    
     
     init(router: Router) {
         self.router = router
@@ -46,7 +48,20 @@ struct MainView<Router: Routing>: View where Router.Route == AppRoute {
                 NavigationLink(isActive: $gameViewActive) {
                     router?.view(for: .gameView)
                 } label: {
-                    Text("GameView")
+                    Text("Game View")
+                        .font(.system(size: 18, weight: .medium))
+                        .padding(EdgeInsets(top: 10, leading: 0, bottom: 10, trailing: 0))
+                        .frame(maxWidth: .infinity, alignment: .center)
+                }
+                .onReceive(viewModel.$isAuth, perform: {
+                    isAuth in
+                    self.isActive = isAuth
+                })
+                
+                NavigationLink(isActive: $catFactViewActive) {
+                    router?.view(for: .catFactView)
+                } label: {
+                    Text("Cat Fact View")
                         .font(.system(size: 18, weight: .medium))
                         .padding(EdgeInsets(top: 10, leading: 0, bottom: 10, trailing: 0))
                         .frame(maxWidth: .infinity, alignment: .center)

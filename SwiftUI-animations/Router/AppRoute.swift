@@ -10,8 +10,8 @@ import SwiftUI
 
 enum AppRoute {
     case mainView
-    case contentView
     case interactiveAnimationView
     case gameView
+    case catFactView
 }
 

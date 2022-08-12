@@ -25,12 +25,12 @@ struct AppRouter: Routing {
     switch route {
     case .mainView:
         MainView(router: self)
-    case .contentView:
-        InteractiveAnimationsView(router: self)
+    case .catFactView:
+        CatFactView(router: self)
     case .interactiveAnimationView:
         InteractiveAnimationsView(router: self)
     case .gameView:
-        InteractiveAnimationsView(router: self)
+        GameView(router: self)
     }
   }
 }
