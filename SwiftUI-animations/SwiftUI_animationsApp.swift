@@ -10,8 +10,11 @@ import SwiftUI
 @main
 struct SwiftUI_animationsApp: App {
     var body: some Scene {
+        
+        let appRouter = AppRouter()
+        
         WindowGroup {
-            ContentView()
+            MainView(router: appRouter)
         }
     }
 }

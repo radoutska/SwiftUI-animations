@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		35C9EB9428A2D10700B4218D /* CrossAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35C9EB9328A2D10700B4218D /* CrossAnimation.swift */; };
+		35CBA3BC28A6A6050045880D /* InteractiveAnimationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35CBA3BB28A6A6050045880D /* InteractiveAnimationsView.swift */; };
+		35CBA3BF28A6AF590045880D /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35CBA3BE28A6AF590045880D /* GameView.swift */; };
+		35CBA3C128A6B6760045880D /* CatFactView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35CBA3C028A6B6760045880D /* CatFactView.swift */; };
+		35CBA3C428A6B69C0045880D /* CatFactViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35CBA3C328A6B69C0045880D /* CatFactViewModel.swift */; };
+		35CBA3C728A6B6C60045880D /* GameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35CBA3C628A6B6C60045880D /* GameViewModel.swift */; };
 		35D44B112898B86A004B13F2 /* SwiftUI_animationsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35D44B102898B86A004B13F2 /* SwiftUI_animationsApp.swift */; };
 		35D44B132898B86A004B13F2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35D44B122898B86A004B13F2 /* ContentView.swift */; };
 		35D44B152898B888004B13F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 35D44B142898B888004B13F2 /* Assets.xcassets */; };
@@ -25,6 +30,12 @@
 		35D44B4F289A1429004B13F2 /* FlipShape+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35D44B4E289A1429004B13F2 /* FlipShape+Extension.swift */; };
 		35D44B52289CC083004B13F2 /* Bool+ObservedObject+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35D44B51289CC082004B13F2 /* Bool+ObservedObject+Ext.swift */; };
 		35D44B57289DA035004B13F2 /* GardenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35D44B56289DA035004B13F2 /* GardenView.swift */; };
+		35D8301C28A4919B0066C4D3 /* MainRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35D8301B28A4919B0066C4D3 /* MainRouter.swift */; };
+		35D8301E28A491E80066C4D3 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35D8301D28A491E80066C4D3 /* MainViewModel.swift */; };
+		35D8302328A599150066C4D3 /* AppRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35D8302228A599150066C4D3 /* AppRoute.swift */; };
+		35D8302528A59E030066C4D3 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35D8302428A59E030066C4D3 /* MainView.swift */; };
+		35D8302928A5E9D20066C4D3 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35D8302828A5E9D20066C4D3 /* ViewModel.swift */; };
+		35D8302B28A5F0270066C4D3 /* FirstViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35D8302A28A5F0270066C4D3 /* FirstViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +57,11 @@
 
 /* Begin PBXFileReference section */
 		35C9EB9328A2D10700B4218D /* CrossAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrossAnimation.swift; sourceTree = "<group>"; };
+		35CBA3BB28A6A6050045880D /* InteractiveAnimationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InteractiveAnimationsView.swift; sourceTree = "<group>"; };
+		35CBA3BE28A6AF590045880D /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
+		35CBA3C028A6B6760045880D /* CatFactView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatFactView.swift; sourceTree = "<group>"; };
+		35CBA3C328A6B69C0045880D /* CatFactViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatFactViewModel.swift; sourceTree = "<group>"; };
+		35CBA3C628A6B6C60045880D /* GameViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewModel.swift; sourceTree = "<group>"; };
 		35D44B0D2898B86A004B13F2 /* SwiftUI-animations.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftUI-animations.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		35D44B102898B86A004B13F2 /* SwiftUI_animationsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_animationsApp.swift; sourceTree = "<group>"; };
 		35D44B122898B86A004B13F2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -66,6 +82,12 @@
 		35D44B4E289A1429004B13F2 /* FlipShape+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FlipShape+Extension.swift"; sourceTree = "<group>"; };
 		35D44B51289CC082004B13F2 /* Bool+ObservedObject+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bool+ObservedObject+Ext.swift"; sourceTree = "<group>"; };
 		35D44B56289DA035004B13F2 /* GardenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GardenView.swift; sourceTree = "<group>"; };
+		35D8301B28A4919B0066C4D3 /* MainRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainRouter.swift; sourceTree = "<group>"; };
+		35D8301D28A491E80066C4D3 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		35D8302228A599150066C4D3 /* AppRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRoute.swift; sourceTree = "<group>"; };
+		35D8302428A59E030066C4D3 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		35D8302828A5E9D20066C4D3 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		35D8302A28A5F0270066C4D3 /* FirstViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +115,45 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		35CBA3B728A6A5720045880D /* Shapes */ = {
+			isa = PBXGroup;
+			children = (
+				35D44B53289D9FEC004B13F2 /* GardenView */,
+				35D44B4028998ED0004B13F2 /* PetalShape.swift */,
+				35D44B3E28996D26004B13F2 /* FlowerShape.swift */,
+				35D44B3C28996BCB004B13F2 /* DropShape.swift */,
+				35D44B4A289A0888004B13F2 /* GrassParticle.swift */,
+				35D44B4C289A0903004B13F2 /* GrassLandShape.swift */,
+			);
+			path = Shapes;
+			sourceTree = "<group>";
+		};
+		35CBA3BA28A6A5D60045880D /* InteractiveAnimationScreen */ = {
+			isa = PBXGroup;
+			children = (
+				35CBA3BB28A6A6050045880D /* InteractiveAnimationsView.swift */,
+			);
+			path = InteractiveAnimationScreen;
+			sourceTree = "<group>";
+		};
+		35CBA3BD28A6AF460045880D /* GameScreen */ = {
+			isa = PBXGroup;
+			children = (
+				35CBA3BE28A6AF590045880D /* GameView.swift */,
+				35CBA3C628A6B6C60045880D /* GameViewModel.swift */,
+			);
+			path = GameScreen;
+			sourceTree = "<group>";
+		};
+		35CBA3C228A6B67A0045880D /* CatFactScreen */ = {
+			isa = PBXGroup;
+			children = (
+				35CBA3C028A6B6760045880D /* CatFactView.swift */,
+				35CBA3C328A6B69C0045880D /* CatFactViewModel.swift */,
+			);
+			path = CatFactScreen;
+			sourceTree = "<group>";
+		};
 		35D44B042898B869004B13F2 = {
 			isa = PBXGroup;
 			children = (
@@ -116,19 +177,17 @@
 		35D44B0F2898B86A004B13F2 /* SwiftUI-animations */ = {
 			isa = PBXGroup;
 			children = (
-				35D44B53289D9FEC004B13F2 /* GardenView */,
-				35D44B50289CC065004B13F2 /* Extensions */,
 				35D44B102898B86A004B13F2 /* SwiftUI_animationsApp.swift */,
+				35D8301F28A597A10066C4D3 /* Router */,
+				35CBA3B728A6A5720045880D /* Shapes */,
+				35D44B50289CC065004B13F2 /* Extensions */,
+				35D8302628A5E9870066C4D3 /* UserStory */,
 				35D44B422899B7A6004B13F2 /* Resources */,
 				35D44B122898B86A004B13F2 /* ContentView.swift */,
-				35D44B4028998ED0004B13F2 /* PetalShape.swift */,
-				35D44B3C28996BCB004B13F2 /* DropShape.swift */,
-				35D44B3E28996D26004B13F2 /* FlowerShape.swift */,
-				35D44B4A289A0888004B13F2 /* GrassParticle.swift */,
-				35D44B4C289A0903004B13F2 /* GrassLandShape.swift */,
 				35D44B142898B888004B13F2 /* Assets.xcassets */,
 				35D44B162898B888004B13F2 /* Preview Content */,
 				35C9EB9328A2D10700B4218D /* CrossAnimation.swift */,
+				35D8302A28A5F0270066C4D3 /* FirstViewModel.swift */,
 			);
 			path = "SwiftUI-animations";
 			sourceTree = "<group>";
@@ -190,6 +249,36 @@
 				35D44B56289DA035004B13F2 /* GardenView.swift */,
 			);
 			path = GardenView;
+			sourceTree = "<group>";
+		};
+		35D8301F28A597A10066C4D3 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				35D8301B28A4919B0066C4D3 /* MainRouter.swift */,
+				35D8302228A599150066C4D3 /* AppRoute.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		35D8302628A5E9870066C4D3 /* UserStory */ = {
+			isa = PBXGroup;
+			children = (
+				35CBA3C228A6B67A0045880D /* CatFactScreen */,
+				35CBA3BD28A6AF460045880D /* GameScreen */,
+				35CBA3BA28A6A5D60045880D /* InteractiveAnimationScreen */,
+				35D8302728A5E98E0066C4D3 /* MainScreen */,
+			);
+			path = UserStory;
+			sourceTree = "<group>";
+		};
+		35D8302728A5E98E0066C4D3 /* MainScreen */ = {
+			isa = PBXGroup;
+			children = (
+				35D8301D28A491E80066C4D3 /* MainViewModel.swift */,
+				35D8302428A59E030066C4D3 /* MainView.swift */,
+				35D8302828A5E9D20066C4D3 /* ViewModel.swift */,
+			);
+			path = MainScreen;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -328,13 +417,24 @@
 				35D44B3D28996BCB004B13F2 /* DropShape.swift in Sources */,
 				35D44B4128998ED0004B13F2 /* PetalShape.swift in Sources */,
 				35D44B49289A071D004B13F2 /* CustomColors.swift in Sources */,
+				35D8301C28A4919B0066C4D3 /* MainRouter.swift in Sources */,
+				35D8302928A5E9D20066C4D3 /* ViewModel.swift in Sources */,
+				35D8302B28A5F0270066C4D3 /* FirstViewModel.swift in Sources */,
 				35D44B4F289A1429004B13F2 /* FlipShape+Extension.swift in Sources */,
+				35CBA3C728A6B6C60045880D /* GameViewModel.swift in Sources */,
+				35D8301E28A491E80066C4D3 /* MainViewModel.swift in Sources */,
 				35C9EB9428A2D10700B4218D /* CrossAnimation.swift in Sources */,
+				35D8302528A59E030066C4D3 /* MainView.swift in Sources */,
 				35D44B4B289A0888004B13F2 /* GrassParticle.swift in Sources */,
+				35CBA3C128A6B6760045880D /* CatFactView.swift in Sources */,
 				35D44B112898B86A004B13F2 /* SwiftUI_animationsApp.swift in Sources */,
+				35CBA3C428A6B69C0045880D /* CatFactViewModel.swift in Sources */,
+				35CBA3BF28A6AF590045880D /* GameView.swift in Sources */,
 				35D44B57289DA035004B13F2 /* GardenView.swift in Sources */,
+				35CBA3BC28A6A6050045880D /* InteractiveAnimationsView.swift in Sources */,
 				35D44B52289CC083004B13F2 /* Bool+ObservedObject+Ext.swift in Sources */,
 				35D44B4D289A0903004B13F2 /* GrassLandShape.swift in Sources */,
+				35D8302328A599150066C4D3 /* AppRoute.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
