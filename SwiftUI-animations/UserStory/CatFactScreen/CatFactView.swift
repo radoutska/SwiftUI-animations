@@ -24,18 +24,27 @@ struct CatFactView<Router: Routing>: View where Router.Route == AppRoute {
     
     var body: some View {
         Text("Cat fact here")
+        Button {
+            viewModel.loadFact()
+        } label: {
+            Text("Press")
+        }
+        Text($viewModel.fact.fact.wrappedValue)
+            .onChange(of: $viewModel.fact.wrappedValue, perform: { updatedFact in
+                //TODO: Add text animation
+            })
     }
 }
 
 struct CatFactView_Previews: PreviewProvider {
     static var device = PreviewDevice(stringLiteral: "iPhone 13 Pro Max")
-   let router: AppRouter = AppRouter()
-
-   static var platform: PreviewPlatform? {
-       return SwiftUI.PreviewPlatform.iOS
-   }
-
-   static var previews: some View {
-       return CatFactView<AppRouter>()
-   }
+    let router: AppRouter = AppRouter()
+    
+    static var platform: PreviewPlatform? {
+        return SwiftUI.PreviewPlatform.iOS
+    }
+    
+    static var previews: some View {
+        return CatFactView<AppRouter>()
+    }
 }

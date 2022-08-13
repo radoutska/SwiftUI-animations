@@ -13,6 +13,9 @@
 		35CBA3C128A6B6760045880D /* CatFactView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35CBA3C028A6B6760045880D /* CatFactView.swift */; };
 		35CBA3C428A6B69C0045880D /* CatFactViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35CBA3C328A6B69C0045880D /* CatFactViewModel.swift */; };
 		35CBA3C728A6B6C60045880D /* GameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35CBA3C628A6B6C60045880D /* GameViewModel.swift */; };
+		35CBA3CA28A6DE8B0045880D /* FactLoadingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35CBA3C928A6DE8B0045880D /* FactLoadingService.swift */; };
+		35CBA3CC28A6E0300045880D /* CatFact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35CBA3CB28A6E0300045880D /* CatFact.swift */; };
+		35CBA3D028A6E0DE0045880D /* CatFactErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35CBA3CF28A6E0DE0045880D /* CatFactErrors.swift */; };
 		35D44B112898B86A004B13F2 /* SwiftUI_animationsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35D44B102898B86A004B13F2 /* SwiftUI_animationsApp.swift */; };
 		35D44B132898B86A004B13F2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35D44B122898B86A004B13F2 /* ContentView.swift */; };
 		35D44B152898B888004B13F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 35D44B142898B888004B13F2 /* Assets.xcassets */; };
@@ -62,6 +65,9 @@
 		35CBA3C028A6B6760045880D /* CatFactView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatFactView.swift; sourceTree = "<group>"; };
 		35CBA3C328A6B69C0045880D /* CatFactViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatFactViewModel.swift; sourceTree = "<group>"; };
 		35CBA3C628A6B6C60045880D /* GameViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewModel.swift; sourceTree = "<group>"; };
+		35CBA3C928A6DE8B0045880D /* FactLoadingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactLoadingService.swift; sourceTree = "<group>"; };
+		35CBA3CB28A6E0300045880D /* CatFact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatFact.swift; sourceTree = "<group>"; };
+		35CBA3CF28A6E0DE0045880D /* CatFactErrors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatFactErrors.swift; sourceTree = "<group>"; };
 		35D44B0D2898B86A004B13F2 /* SwiftUI-animations.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftUI-animations.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		35D44B102898B86A004B13F2 /* SwiftUI_animationsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_animationsApp.swift; sourceTree = "<group>"; };
 		35D44B122898B86A004B13F2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -154,6 +160,30 @@
 			path = CatFactScreen;
 			sourceTree = "<group>";
 		};
+		35CBA3C828A6DE710045880D /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				35CBA3C928A6DE8B0045880D /* FactLoadingService.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		35CBA3CD28A6E0330045880D /* DataModels */ = {
+			isa = PBXGroup;
+			children = (
+				35CBA3CB28A6E0300045880D /* CatFact.swift */,
+			);
+			path = DataModels;
+			sourceTree = "<group>";
+		};
+		35CBA3CE28A6E0BA0045880D /* Error */ = {
+			isa = PBXGroup;
+			children = (
+				35CBA3CF28A6E0DE0045880D /* CatFactErrors.swift */,
+			);
+			path = Error;
+			sourceTree = "<group>";
+		};
 		35D44B042898B869004B13F2 = {
 			isa = PBXGroup;
 			children = (
@@ -177,6 +207,9 @@
 		35D44B0F2898B86A004B13F2 /* SwiftUI-animations */ = {
 			isa = PBXGroup;
 			children = (
+				35CBA3CE28A6E0BA0045880D /* Error */,
+				35CBA3CD28A6E0330045880D /* DataModels */,
+				35CBA3C828A6DE710045880D /* Networking */,
 				35D44B102898B86A004B13F2 /* SwiftUI_animationsApp.swift */,
 				35D8301F28A597A10066C4D3 /* Router */,
 				35CBA3B728A6A5720045880D /* Shapes */,
@@ -420,6 +453,8 @@
 				35D8301C28A4919B0066C4D3 /* MainRouter.swift in Sources */,
 				35D8302928A5E9D20066C4D3 /* ViewModel.swift in Sources */,
 				35D8302B28A5F0270066C4D3 /* FirstViewModel.swift in Sources */,
+				35CBA3CC28A6E0300045880D /* CatFact.swift in Sources */,
+				35CBA3CA28A6DE8B0045880D /* FactLoadingService.swift in Sources */,
 				35D44B4F289A1429004B13F2 /* FlipShape+Extension.swift in Sources */,
 				35CBA3C728A6B6C60045880D /* GameViewModel.swift in Sources */,
 				35D8301E28A491E80066C4D3 /* MainViewModel.swift in Sources */,
@@ -435,6 +470,7 @@
 				35D44B52289CC083004B13F2 /* Bool+ObservedObject+Ext.swift in Sources */,
 				35D44B4D289A0903004B13F2 /* GrassLandShape.swift in Sources */,
 				35D8302328A599150066C4D3 /* AppRoute.swift in Sources */,
+				35CBA3D028A6E0DE0045880D /* CatFactErrors.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

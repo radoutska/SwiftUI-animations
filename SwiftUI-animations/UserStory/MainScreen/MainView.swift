@@ -14,10 +14,10 @@ struct MainView<Router: Routing>: View where Router.Route == AppRoute {
     let router: Router?
     @State var activeNavigation: AppRoute?
     @ObservedObject private var viewModel = MainViewModel()
-    @State var isActive: Bool = true
+    @State var isActive: Bool = false
     @State var gameViewActive: Bool = false
     @State var interactiveNavigationViewActive: Bool = false
-    @State var catFactViewActive: Bool = true
+    @State var catFactViewActive: Bool = false
     
     
     init(router: Router) {

@@ -12,7 +12,7 @@ import Combine
 final class MainViewModel: ViewModel {
     
     
-    @Published var navigateTo: AppRoute = .interactiveAnimationView
+    @Published var navigateTo: AppRoute = .mainView
     @Published var isAuth: Bool = false
     private var cancellables: [AnyCancellable] = []
 
